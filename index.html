@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- ======= main-container ======= -->
+    <div class="main-container">
+        <!-- asside -->
+        <div class="asside" id="asside">
+            <div class="btn2" >
+                <button class="btn" id="asside_btn2" onclick="goBack()">Go Back</button>
+            </div>
+            <div class="logo" id="asside_logo">
+                 <h2 id="portfolio">Portfolio</h2>
+            </div>
+            <nav id="asside_nav">
+                <ul>
+                    <li><i class="fa-solid fa-house-chimney"></i><a href="#">Home</a></li>
+                    <li><i class="fa-solid fa-envelope"></i><a href="About me.html">About</a></li>
+                    <li><i class="fa-solid fa-list"></i><a href="#">Services</a></li>
+                    <li><i class="fa-solid fa-user"></i><a href="#">Projects</a></li>
+                    <li><i class="fa-solid fa-phone"></i><a href="contact_page.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- home -->
+        <div class="home" id="home">
+            <div class="btn1" >
+                <button class="btn" id="asside_btn1" onclick="assidebar()">Menu</button>
+            </div>
+            <div class="platte" id="home_platte">
+                    <div class="cross-icon" id="cross" onclick="cross()">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="platte-color" id="platte">
+                        <div class="p">
+                           <p>Themes Color</p>
+                        </div>
+                        <div class="colors">
+                           <span class="span span1" onclick="color1()"></span>
+                           <span class="span span2" onclick="color2()"></span>
+                           <span class="span span3" onclick="color3()"></span>
+                           <span class="span span4" onclick="color4()"></span>
+                        </div>
+                    </div>  
+                    <div class="color-icon" id="color_icon">
+                        <i class="fa-solid fa-location-crosshairs" id="coloricon" onclick="allcolors()"></i>
+                    </div>
+            </div>
+            <!-- text-picture -->
+            <div class="text-picture" id="home_text_picture"> 
+                    <div class="text">
+                          <h2 class="text-h2-1">Hello,my name is <b id="h2-1">Abdullah Khan</b></h2>
+                          <h2 class="text-h2-2">I am <b id="h2-2">web developer </b><strong>|</strong></h2>
+                          <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, sint. consectetur adipisicing elit. Iusto hic expedita, aperiam libero illo nihil dolorum aspernatur sequi voluptas necessitatibus?</p>
+                          <button id="button">More About Me</button>
+                    </div>
+                    <div class="picture">
+                          <img src="images/my_portfolio.png" alt="no-internet" width="70%" height="auto" id="image">
+                    </div>
+            </div>
+        </div>
+        
+    </div>
+<!-- === javascript -->
+    <script src="myscript.js"></script>
+</body>
+</html>
